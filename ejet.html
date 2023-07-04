@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ежедневник</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <ul class="gl">
+        <li class="glav">
+            <a href="ejet.html">Ежедневник</a>
+        </li>
+
+        <li class="glav">
+            <a href="kal.html">Калькулятор</a>
+        </li>
+
+        <li class="glav">
+            <a href="xrparol.html">Хранилище паролей</a>
+        </li>
+
+        <li class="glav">
+            <a href="telbook.html">Телефонная книжка</a>
+        </li>
+    </ul>
+    <br>
+    <div class="rv1">
+        <div v-show="show_day"></div>
+        <div class="v1">
+            Показать/Скрыть список: <input v-model="show_list"  type="checkbox">
+            <input v-model="in_item" v-on:keydown.13="add_item" v-on:keydown.27="del_text" type="text">
+            <transition name="switch_list">
+                <ul v-show="show_list">
+                    <li v-for="(item, index) in list" v-on:click="delete_item(index)"> {{item}} </li>
+                </ul>
+            </transition>
+            <!-- <input v-model="in_item" v-on:keydown.13="add_item" v-on:keydown.27="del_text" type="text"> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

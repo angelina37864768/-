@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(172, 180, 222); 
+    font-size: 20px;
+}
+.gl{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    background-color: rgb(103, 99, 165);
+    border-radius: 9px;
+    font-size: 20px;
+}
+.gl a{
+    text-decoration: none;
+    color: black;
+}
+.gl a:hover{
+    color: white;
+}
+.glav{
+    margin: 10px 30px;
+}
+.dtb{
+    margin: 40px;
+}
+.telb{
+    margin: 40px;
+    background-color: rgb(200, 205, 250);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(165, 184, 246);
+}
+button:hover{
+    background-color: rgb(191, 205, 250);
+}
+h3{
+    margin-top: -5px;
+}

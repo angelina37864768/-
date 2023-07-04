@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хранилище паролей</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <ul class="gl">
+        <li class="glav">
+            <a href="ejet.html">Ежедневник</a>
+        </li>
+
+        <li class="glav">
+            <a href="kal.html">Калькулятор</a>
+        </li>
+
+        <li class="glav">
+            <a href="xrparol.html">Хранилище паролей</a>
+        </li>
+
+        <li class="glav">
+            <a href="telbook.html">Телефонная книжка</a>
+        </li>
+    </ul>
+    <div class="dtb">
+        Логин:<input class="key" type="text">
+        Пароль: <input class="val" type="text">
+        <button class="b1">Сохранить</button>
+        <button class="b2">Очистить</button>
+        <br>
+        <br>
+        <b> <h3>Сохраненные</h3></b> 
+        <b>Скрыть/Показать</b><input type="checkbox" checked="checked" onclick="if(this.checked){this.nextSibling.style.display=''}else {this.nextSibling.style.display='none';  this.nextSibling.value='';}"><div class="res"></div>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>
